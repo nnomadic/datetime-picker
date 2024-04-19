@@ -54,7 +54,7 @@ const present = async () => {
 ### present(...)
 
 ```typescript
-present(options?: PresentOptions | undefined) => Promise<PresentResult>
+present(options?: PresentOptions | undefined) => any
 ```
 
 Open the datetime picker.
@@ -67,7 +67,7 @@ Only available on Android and iOS.
 | ------------- | --------------------------------------------------------- |
 | **`options`** | <code><a href="#presentoptions">PresentOptions</a></code> |
 
-**Returns:** <code>Promise&lt;<a href="#presentresult">PresentResult</a>&gt;</code>
+**Returns:** <code>any</code>
 
 **Since:** 0.0.1
 
@@ -75,13 +75,6 @@ Only available on Android and iOS.
 
 
 ### Interfaces
-
-
-#### PresentResult
-
-| Prop        | Type                | Description                                                                                          | Since |
-| ----------- | ------------------- | ---------------------------------------------------------------------------------------------------- | ----- |
-| **`value`** | <code>string</code> | The value entered by the user. The format of this value matches the value of the `format` parameter. | 0.0.1 |
 
 
 #### PresentOptions
@@ -99,6 +92,13 @@ Only available on Android and iOS.
 | **`value`**                 | <code>string</code>                         | The predefined value when opening the picker. The format of this value must match the value of the `format` parameter.                                                                                                           |                                             | 0.0.1 |
 | **`androidTimePickerMode`** | <code>'clock' \| 'spinner'</code>           | Whether to use the spinner or clock mode for the time picker on Android. This value overwrites the `androidTimePickerMode` configuration value. Only available on Android.                                                       |                                             | 5.1.0 |
 | **`androidDatePickerMode`** | <code>'spinner' \| 'calendar'</code>        | Whether to use the calendar or spinner mode for the date picker on Android. This value overwrites the `androidDatePickerMode` configuration value. Only available on Android.                                                    |                                             | 5.1.0 |
+
+
+#### PresentResult
+
+| Prop        | Type                | Description                                                                                          | Since |
+| ----------- | ------------------- | ---------------------------------------------------------------------------------------------------- | ----- |
+| **`value`** | <code>string</code> | The value entered by the user. The format of this value matches the value of the `format` parameter. | 0.0.1 |
 
 </docgen-api>
 

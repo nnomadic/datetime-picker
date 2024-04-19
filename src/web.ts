@@ -8,8 +8,8 @@ import type {
 
 export class DatetimePickerWeb
   extends WebPlugin
-  implements DatetimePickerPlugin
-{
+  implements DatetimePickerPlugin {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   public async present(_options: PresentOptions): Promise<PresentResult> {
     throw this.unimplemented('Not implemented on web.');
   }
